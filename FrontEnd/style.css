@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+}
+
+.navbar {
+    height: 40px;
+    width: 100%;
+    background-color: #222222;
+    top: 0;
+    left: 0;
+    padding: 10px;
+}
+
+.navbar img {
+    height: 80%;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(100deg) brightness(100%) contrast(100%)
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.content {
+    /* height: 80vw; */
+    width: 100%;
+}
+
+.searchBar {
+    width: 100%;
+    height: 60%;
+}
+
+.searchBar img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    filter: brightness(70%)
+}
+
+.searchBar input {
+    position: absolute;
+    top: 30%;
+    left: calc(50% - 85px);
+    z-index: 1000;
+}
+
+.news {
+    height: auto;
+    width: 100%;
+}
+
+.footer {
+    height: 100px;
+    width: 100%;
+    background-color: #222222;
+}
