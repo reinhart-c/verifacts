@@ -2,14 +2,14 @@ from django.http import JsonResponse
 from django.conf import settings
 from sklearn.feature_extraction.text import TfidfVectorizer
 from django.views.decorators.csrf import csrf_exempt
+import json
 
 
 @csrf_exempt #disable temporary
 def checkFact(request):
     if request.method == 'POST':
-        # text = request.POST.get('text')
-        text = request.POST.get('text', 'babi terbang menuju angkasa')
-        # text = request.POST['text']
+        body = json.loads(request.body)
+        text = body['text']
         text = [text]
         print(text)
         vectorizer = TfidfVectorizer()
