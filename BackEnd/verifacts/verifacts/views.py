@@ -10,11 +10,14 @@ def checkFact(request):
     if request.method == 'POST':
         body = json.loads(request.body)
         text = body['text']
-        text = [text]
         print(text)
-        vectorizer = TfidfVectorizer()
-        text = vectorizer.fit_transform(text)
-        model = settings.MODEL
-        pred = model.predict(text)
-        print(pred)
-        return JsonResponse({'prediction': pred})
+        if text in (None, ''):
+            return JsonResponse({'prediction': "Please input text"})
+        else:
+            text = [text]
+            vectorizer = TfidfVectorizer()
+            text = vectorizer.fit_transform(text)
+            model = settings.MODEL
+            pred = model.predict(text)
+            print(pred)
+            return JsonResponse({'prediction': pred})
