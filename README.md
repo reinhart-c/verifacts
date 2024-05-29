@@ -15,6 +15,7 @@ Fake news detector
 
 # Problem
 In recent years, the pervasive spread of fake news has become a critical issue, affecting societies globally. Fake news, defined as false or misleading information presented as news, has the potential to influence public opinion, disrupt political processes, and create widespread misinformation on crucial issues such as health, environment, and security. The rise of social media and digital platforms has exacerbated this problem, enabling rapid and far-reaching dissemination of unverified and often sensational content.
+
 The implications of unchecked fake news are profound. It can lead to the erosion of trust in legitimate news sources, polarize communities, and even incite violence. In democratic societies, the spread of fake news can undermine electoral integrity and democratic processes, while in public health, it can contribute to the spread of harmful misinformation, as seen during the COVID-19 pandemic. Given these significant impacts, developing effective methods for detecting and mitigating fake news is of paramount importance.
 
 
