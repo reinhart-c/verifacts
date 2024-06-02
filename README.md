@@ -20,7 +20,7 @@ The implications of unchecked fake news are profound. It can lead to the erosion
 
 
 # Solution
-We explore advanced machine learning techniques to address this challenge. Our focus is on two key algorithms: Support Vector Machine (SVM) and Random Forest, which are evaluated using two distinct text representation methods: Term Frequency-Inverse Document Frequency (TF-IDF) and FastText embeddings. By comparing the performance of SVM and Random Forest classifiers with TF-IDF and FastText embeddings, we aims to identify the most effective approach for fake news detection. Our research provides valuable insights into the strengths and limitations of these techniques, contributing to the broader effort of combating the spread of misinformation.
+We explore advanced machine learning techniques to address this challenge. Our focus is on two key algorithms: Support Vector Machine (SVM) and Random Forest, which are evaluated using two distinct text representation methods: Term Frequency-Inverse Document Frequency (TF-IDF) and FastText embeddings. By comparing the performance of SVM and Random Forest classifiers with TF-IDF and FastText embeddings, we aim to identify the most effective approach for fake news detection. Our research provides valuable insights into the strengths and limitations of these techniques, contributing to the broader effort of combating the spread of misinformation.
 
 
 # Method
