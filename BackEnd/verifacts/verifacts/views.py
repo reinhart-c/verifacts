@@ -15,9 +15,11 @@ def checkFact(request):
             return JsonResponse({'prediction': "Please input text"})
         else:
             text = [text]
-            vectorizer = TfidfVectorizer()
-            text = vectorizer.fit_transform(text)
             model = settings.MODEL
             pred = model.predict(text)
             print(pred)
+            if pred[0] == 0:
+                return JsonResponse({'prediction': "Valid"})
+            elif pred[0] == 1:
+                return JsonResponse({'prediction': "Hoax"})
             return JsonResponse({'prediction': pred})

@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
-import pickle
 import joblib
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -131,5 +130,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 # NLP model
-# MODEL = pickle.load(open('../../Model/model.pkl', 'rb'))
 MODEL = joblib.load('../../Model/model.joblib')
