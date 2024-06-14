@@ -19,7 +19,6 @@
 
 .navbar img {
     height: 80%;
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(100deg) brightness(100%) contrast(100%);
     margin-right: 15px;
 }
 
@@ -72,6 +71,7 @@
     background-color: #ffffff;
     text-align: center;
 }
+
 textarea {
     font-size: 2em;
 }
